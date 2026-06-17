@@ -1,0 +1,31 @@
+pipeline {
+    agent { label "AGENT-1"}
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    sh " "
+                        echo "hello build"              
+                }
+            }
+        }
+
+        stage('test') {
+            steps {
+                script {
+                    sh " "
+                        echo "hello test"
+                }
+            }
+        }
+
+        stage('deploy') {
+            steps {
+                script {
+                    sh " "
+                        echo " hello deploy"
+                }
+            }
+        }
+    }    
+}
